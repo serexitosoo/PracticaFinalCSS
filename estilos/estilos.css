@@ -1,0 +1,156 @@
+body{
+  font-family: Dancing Script;
+  background-color: black;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%
+}
+
+header{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+
+@media(min-width:720px) {
+  #menu-principal{
+
+    margin-bottom: 10px;
+    text-align: right;
+
+  }
+}
+
+@media (max-width: 420px) {
+  #menu-principal{
+    display: none;
+  }
+}
+
+#central{
+  background-color: #82c3a6;
+}
+
+figure {
+  margin: 0px;
+  padding: 1%;
+	text-align: center;
+}
+
+.contenedor{
+  display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  background-color:  #d5c75f;
+  border: 1px solid;
+}
+
+@media(min-width:720px){
+  #imagen1,#imagen2{
+    width: 47%;
+  }
+
+  .contenedor img{
+    text-align: center;
+    width: 40vw;
+  }
+
+  .contenedor > div {
+    text-align: center;
+  	padding: 5px;
+  	margin: 5px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  #imagen1,#imagen2 {
+  width: 100%;
+  }
+
+}
+
+#imagen1{
+  border: 2px solid;
+  filter: drop-shadow(16px 16px 20px #82c3a6);
+
+}
+
+#imagen1:hover{
+  transform: rotate(10deg);
+}
+
+#imagen2{
+  border: 2px solid;
+  filter: drop-shadow(16px 16px 20px #82c3a6);
+}
+
+#imagen2:hover{
+  transform: translate(5px,-20px);
+}
+
+footer{
+  background-color:  #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenidofoo{
+  display: flex;
+	flex-direction: row;
+}
+
+#contacto{
+  margin: 10px;
+  padding: 10px;
+}
+
+#terminos{
+  margin: 10px;
+  padding: 10px;
+}
+
+#redes{
+  margin: 10px;
+  padding: 10px;
+}
+
+#derechos{
+  margin: 10px;
+  padding: 10px;
+}
+
+.contenidofoo {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+@media(min-width:720px){
+  #contacto,#terminos,#redes,#derechos{
+    width: 20%;
+  }
+}
+
+@media (max-width: 420px) {
+  #contacto,#terminos,#redes,#derechos {
+  width: 100%;
+  }
+
+  .contenidofoo {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
