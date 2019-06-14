@@ -20,18 +20,23 @@ header h1{
 }
 
 
-@media(min-width:720px) {
+@media(min-width: 900px) {
   #menu-principal{
-
     margin-bottom: 10px;
     text-align: right;
+  }
 
+  #menu-principal a{
+    text-decoration: none;
+    text-align: right;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 900px) {
   #menu-principal{
-    display: none;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
   }
 }
 
